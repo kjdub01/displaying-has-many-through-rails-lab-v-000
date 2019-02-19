@@ -5,8 +5,4 @@ class Patient < ActiveRecord::Base
   def number_of_appointments 
     self.appointments.count.to_s
   end
-  
-  def doctor 
-    self.appointments.doctor
-  end
 end
